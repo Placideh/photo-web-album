@@ -4,8 +4,10 @@ import Form from './components/Form'
 import Photos from './components/Photos'
 function App() {
   const[photos,setPhotos]=useState([])
+  const [id,setId]=useState(0)
+  //getAlbumId from the Form
   const getAlbumId=(id)=>{
-  return id
+    setId(id)
   }
   useEffect(()=>{
     const getAlbum=async ()=>{

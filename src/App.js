@@ -13,10 +13,10 @@ function App() {
       setPhotos(albumPhoto)
     }
     getAlbum()
-  },[])
-  //fetchTheAlbum
+  },[id])
+  //fetchTheAlbumPhotos
   const fetchAlbum=async ()=>{
-    const res=await fetch('https://jsonplaceholder.typicode.com/albums/1/photos')
+    const res=await fetch(`https://jsonplaceholder.typicode.com/albums/${id}/photos`)
     const data=await res.json()
     return data
   }
@@ -24,7 +24,8 @@ function App() {
     <div>
       <Header/>
       <Form onSearch={getAlbumId}/>
-      {photos.map((photo)=>(<span key={photo.id}><img src={photo.thumbnailUrl} /></span>))}
+      <Photos photos={photos}/>
+
     </div>
   );
 }

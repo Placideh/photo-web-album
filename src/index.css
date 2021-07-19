@@ -228,7 +228,7 @@ code {
     display: grid;
     grid-template-columns: 1fr  1fr;
     position: relative;
-    left:-1em;
+    left:-2em;
     grid-gap:1.5em;
 
 

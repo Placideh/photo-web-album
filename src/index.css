@@ -193,3 +193,57 @@ code {
     border-radius: 10px;
   }
 }
+@media (max-width:400px) {
+  .my-form{
+    position: relative;
+    top:7em;
+    left:2.5em;
+  }
+  .my-form .inputText {
+    position: absolute;
+    height: 2.5em;
+    border-radius: 5px;
+    width:40%;
+    left:-0.5em;
+  }
+  .my-form .btn {
+    background-color:#000;
+    color:#fff;
+    position:absolute;
+    right: 3em;
+    height: 2.7em;
+    border-radius: 5px;
+    width:37%;
+  }
+  .my-form .btn:hover{
+    background-color:yellow;
+    color:blue;
+    position:absolute;
+    right: 3em;
+    height: 2.7em;
+    border-radius: 5px;
+    width:37%;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    position: relative;
+    left:-1em;
+    grid-gap:1.5em;
+
+
+
+  }
+  .thumbnail {
+    position: relative;
+    top:12em;
+  }
+  .thumbnail >h3 {
+    font-size: 15px;
+    width:70%;
+    color:blue;
+  }
+  .thumbnail >img {
+    border-radius: 10px;
+  }
+}

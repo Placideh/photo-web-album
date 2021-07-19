@@ -10,8 +10,6 @@
      onSearch(albumId)
      setAlbumId('')
    }
-
-
     return (
         <form className="my-form" onSubmit={onSubmit}>
             <input type="search" value={albumId} onChange={(e)=>setAlbumId(e.target.value)} className="inputText"placeholder="Enter Album Id"/>
